@@ -19,31 +19,49 @@ h3{
 body{
      background-image: url(images/bg-home.jpg);
      background-size: cover;
-     height: 150vh;
+     height: 140vh;
 }
 
 header{
     display: flex;
+    align-items: center;
     justify-content: center;
-    justify-content: space-evenly;
     background-image: url(images/bg-transparent1.png);
     color: aliceblue;
 }
-header>h3{
+.top-nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.top-nav>div :first-of-type{
+    display: flex;
+}
+
+#menu-toggle{
+    display: none;
+}
+.menu{
+    list-style-type: none;
     display: flex;
     align-items: center;
-    color: aliceblue;
+    margin-left: 20px;
 }
-header>h1:first-of-type{
-    background-color: black;
+.menu>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(70px,1.5vw,200px);
 }
+
 .premier{
     display: flex;
     justify-content: center;
     
 }
-.premier>img{
+.premier>div>img{
     position: relative;
+    width: 100%;
     top: 25px;
     z-index: 4;
 }
@@ -53,7 +71,7 @@ header>h1:first-of-type{
     align-items: center;
     justify-content: center;
     color:aliceblue;
-    font-size: 200%;
+    font-size: clamp(15px,2.5vw,100px);
 }
 .premier>div>button{
     background-color: black;
@@ -76,7 +94,14 @@ header>h1:first-of-type{
     background-image: url(images/bg-transparent1.png);
     
 }
+.block{
+    font-size: clamp(10px,1vw,100px);
+}
 .block-photo{
+    display: flex;
+    
+}
+.block-photo>div {
     display: flex;
 }
 .text{
@@ -95,6 +120,7 @@ header>h1:first-of-type{
     justify-content: space-evenly;
     color: aliceblue;
 }
+
 h3{
     color: #A3A3A3;
 }
@@ -103,6 +129,7 @@ h3{
 }
 .video>IMG{
     margin-top: 20px;
+    width: clamp(400px,5vw,800px);
 }
 .blog{
     display: flex;
@@ -136,6 +163,7 @@ h3{
 
 h3 ,p{
     margin-left: 10px;
+    text-align: center;
 }
 
 footer>section{
@@ -157,7 +185,7 @@ footer>section>div{
     margin-left: 10px;
     font-size: 30px;
 }
-footer>section:last-child{
+h6{
     display: flex;
     justify-content: center;
     align-items: center;

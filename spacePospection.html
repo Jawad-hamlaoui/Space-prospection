@@ -6,20 +6,35 @@
     <title>Sapce Prospection</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   </head>
   <body>
     <header>
-      <img src="images/logo.png" alt="" />
-      <h3>HOME</h3>
-      <h3>ABOUTE</h3>
-      <h3>PROJECTS</h3>
-      <h3>BLOG</h3>
-      <h3>CONTACT</h3>
+      <section class="top-nav">
+        <div>
+          <img src="images/logo.png" alt="logo de l'entreprise">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>PROJECTS</li>
+          <li>BLOG</li>
+          <li>CONTACT</li>
+        </ul>
+      </section>
+      
     </header>
     <main>
       <section class="premier">
-        <img src="images/satellite.png" alt="" />
+        <div>
+          <img src="images/satellite.png" alt="image satellite" />
+        </div>
+        
         <div>
           <h2>SOYUZ TMA-M</h2>
           <h1>SPACECRAFT</h1>
@@ -28,13 +43,18 @@
       </section>
 
       <section class="deuxieme">
-        <div calsse="block">
+        <div class="block">
           <h2>FEATURED PROJECTS</h2>
           <div class="block-photo">
-            <img src="images/project-image1.jpg" alt="" />
-            <img src="images/project-image2.jpg" alt="" />
-            <img src="images/project-image3.jpg" alt="" />
-            <img src="images/project-image4.jpg" alt="" />
+            <div> 
+              <img src="images/project-image1.jpg" alt="image d'une fusée dans l'espace" />
+              <img src="images/project-image2.jpg" alt="image de la planet Terre" />
+            </div>
+            <div>
+              <img src="images/project-image3.jpg" alt="image d'une galaxie" />
+              <img src="images/project-image4.jpg" alt="image d'un satellite dans l'espace, on voit en arriere plan la lune" />
+            </div>
+            
           </div>
         </div>
       </section>
@@ -43,20 +63,20 @@
           <h2>OUR MISSION</h2>
           <p>
             This webdite template has been designed by
-            <a href="Free Website Templates">Free Website Templates</a> for
+            <a href="#">Free Website Templates</a> for
             you,for free.You can replace all this text with your own text.
           </p>
         </div>
         <div class="block2">
           <div class="video">
             <h1>FEATURED VIDEO</h1>
-            <img src="images/mars-rover.jpg" alt="" />
+            <img src="images/mars-rover.jpg" alt="iamge d'un rebot sur la planette mar" />
           </div>
           <div class="blog">
             <h2>LATEST BLOG</h2>
             <div class="parent">
               <div>
-                <img src="images/finding-planet.jpg" alt="" />
+                <img src="images/finding-planet.jpg" alt="image d'une planette dans l'espace" />
                 <div>
                   <div>
                     <h3>FINDING PLANET X-123</h3>
@@ -68,7 +88,7 @@
                 </div>
               </div>
               <div>
-                <img src="images/new-satellitedish.jpg" alt="" />
+                <img src="images/new-satellitedish.jpg" alt="image d'un satellite sur terre " />
                 <div>
                   <div>
                     <h3>NEW STAELLITE DISH</h3>
@@ -93,10 +113,9 @@
                 <i class="fa-brands fa-pinterest-p" style="color: #ffffff;"></i>
             </div>
         </section>
-        <section>
-            <p> 2023 BY SPACE PROSECTION | ALL RIGHTS RESERVED</p>
+            <h6> 2023 BY SPACE PROSECTION | ALL RIGHTS RESERVED</h6>
 
-        </section>
+        
       </footer>
     </main>
   </body>
